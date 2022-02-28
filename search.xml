@@ -4,6 +4,85 @@
   
     
     <entry>
+      <title>SpringBoot 使用记录</title>
+      <link href="/2022/02/28/SpringBoot-%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+      <url>/2022/02/28/SpringBoot-%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="SpringBoot中提示Could-not-autowire-No-beans-of-‘xxx’-type-found和Unable-to-find-a-SpringBootC-的解决办法"><a href="#SpringBoot中提示Could-not-autowire-No-beans-of-‘xxx’-type-found和Unable-to-find-a-SpringBootC-的解决办法" class="headerlink" title="SpringBoot中提示Could not autowire. No beans of ‘xxx’ type found和Unable to find a @SpringBootC..的解决办法"></a>SpringBoot中提示Could not autowire. No beans of ‘xxx’ type found和Unable to find a @SpringBootC..的解决办法</h1><blockquote><p>问题描述</p></blockquote><p>@autowired  爆红的一种情况</p><p>没有将springboot的启动类放在包的根目录中</p><blockquote><p>解决方法</p></blockquote><p>将SpringBoot的启动类放到项目包的根目录下</p><p> <img src="/2022/02/28/SpringBoot-%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/image-20220228103017651.png" alt="image-20220228103017651"></p><p><a href="https://blog.csdn.net/u013347451/article/details/94415181">原文链接</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> question </category>
+          
+          <category> SpringBoot </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> SpringBoot </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL使用记录</title>
+      <link href="/2022/02/28/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+      <url>/2022/02/28/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="报错1140-In-aggregated-query-without-GROUP-BY-expression-1-of-SELECT-list-contains-nonaggreg"><a href="#报错1140-In-aggregated-query-without-GROUP-BY-expression-1-of-SELECT-list-contains-nonaggreg" class="headerlink" title="报错1140 - In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggreg"></a>报错1140 - In aggregated query without GROUP BY, expression #1 of SELECT list contains nonaggreg</h1><blockquote><p>解决方法</p></blockquote><p><a href="https://blog.csdn.net/weixin_43849590/article/details/109032710">原文链接</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> question </category>
+          
+          <category> MySQL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>好用的工具</title>
+      <link href="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
+      <url>/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="图片压缩工具"><a href="#图片压缩工具" class="headerlink" title="图片压缩工具"></a>图片压缩工具</h1><ul><li><p><a href="https://saerasoft.com/caesium/">caesium</a></p><p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220221145835788.png" alt="image-20220221145835788"></p></li></ul><h1 id="json工具、加密解密、网络等等工具网站"><a href="#json工具、加密解密、网络等等工具网站" class="headerlink" title="json工具、加密解密、网络等等工具网站"></a>json工具、加密解密、网络等等工具网站</h1><ul><li><p><a href="https://www.bejson.com/enc/md5dsc/">BEJSON</a></p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220228095232243.png" alt="image-20220228095232243" style="zoom:80%;"></li><li><p><a href="https://www.fly63.com/tool/home.html">FLY63</a></p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220228095341058.png" alt="image-20220228095341058" style="zoom:80%;"></li><li></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Tool </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>typora使用记录</title>
       <link href="/2022/02/21/typora%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
       <url>/2022/02/21/typora%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
@@ -147,7 +226,7 @@
       <link href="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/"/>
       <url>/2022/02/20/Oracle%E7%89%B9%E6%80%A7/</url>
       
-        <content type="html"><![CDATA[<h1 id="存储过程"><a href="#存储过程" class="headerlink" title="存储过程"></a>存储过程</h1><p>存储过程的一些知识，测试、入参</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221092538826.png" alt="image-20220221092538826"></p><blockquote><p>入参clob类型</p></blockquote><p>将clob类型改为String类型</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221092704423.png" alt="image-20220221092704423"></p><p> 直接使用String字符串测试</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221092740869.png" alt="image-20220221092740869"></p><h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><blockquote><p>获取uuid</p></blockquote><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--函数返回的是32位 </span></span><br><span class="line"><span class="comment">--可以使用字符串分隔获取自己想要的位数</span></span><br><span class="line">sys_guid()</span><br></pre></td></tr></table></figure><h1 id="序列-Sequence"><a href="#序列-Sequence" class="headerlink" title="序列(Sequence)"></a>序列(Sequence)</h1><blockquote><p>创建序列</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE SEQUENCE SEQ_DEMO INCREMENT BY 1 START WITH 1 NOMAXvalue NOCYCLE NOCACHE;</span><br></pre></td></tr></table></figure><ol><li><p>语法</p><blockquote><p>CREATE SEQUENCE 序列名 [相关参数]</p></blockquote></li><li><p>参数说明</p><blockquote><p>INCREMENT BY :序列变化的步进，负值表示递减。(默认1)<br>START WITH:序列的初始值 。(默认1)<br>MAXvalue:序列可生成的最大值。(默认不限制最大值，NOMAXVALUE)<br>MINVALUE:序列可生成的最小值。(默认不限制最小值，NOMINVALUE)<br>CYCLE:用于定义当序列产生的值达到限制值后是否循环(NOCYCLE:不循环，CYCLE:循环)。<br>CACHE:表示缓存序列的个数，数据库异常终止可能会导致序列中断不连续的情况，默认值为20，如果不使用缓存可设置NOCACHE</p></blockquote></li><li><p>修改、删除序列</p><blockquote><p>使用 <code>alter</code> 命令进行修改</p><p>使用 <code>drop</code> 命令删除</p></blockquote></li></ol><blockquote><p>使用序列</p></blockquote><ul><li><p>currval</p><ul><li><code>currval</code> 表示序列的当前值，新序列必须使用一次<code>nextval</code> 才能获取到值，否则会报错</li></ul></li><li><p>nextval</p><ul><li><code>nextval</code> 表示序列的下一个值。新序列首次使用时获取的是该序列的初始值，从第二次使用时开始按照设置的步进递增</li></ul></li></ul><blockquote><p>查询序列的值：select seq_name.[currval,nextval] from dual;<br>查看所有已创建的序列：select * from user_sequences<br>SQL语句中使用：insert into table (id) values (seq_name.nextval)</p></blockquote><h2 id="PLSQL图像化操作"><a href="#PLSQL图像化操作" class="headerlink" title="PLSQL图像化操作"></a>PLSQL图像化操作</h2><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221095508801.png" alt="image-20220221095508801"></p><h1 id="包概念"><a href="#包概念" class="headerlink" title="包概念"></a>包概念</h1><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221095735510.png" alt="image-20220221095735510"></p><p>包下有存储过程、函数、类型、变量等等。调用时使用<strong>包名.变量名</strong></p><h2 id="PLSQL下编辑包下存储过程"><a href="#PLSQL下编辑包下存储过程" class="headerlink" title="PLSQL下编辑包下存储过程"></a>PLSQL下编辑包下存储过程</h2><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221100021421.png" alt="image-20220221100021421"></p><p>左边是声明语句，右边是body，修改完要重新编译</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221100147575.png" alt="image-20220221100147575"></p><h1 id="Database-link"><a href="#Database-link" class="headerlink" title="Database link"></a>Database link</h1><p>oracle在进行跨库访问时，可以通过创建dblink实现,创建dblink，以及通过dblink完成插入、修改、删除等操作。</p><blockquote><p>创建dblink</p></blockquote><ul><li><p>使用sql创建</p><blockquote><p>语法</p><p><strong>create public database link linekName connect to username identified by “password” USING ‘dbname’</strong></p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-- 示例</span><br><span class="line">create public database link TESTLINK2 connect to test identified by &quot;123456&quot; USING &#x27;ORCL2&#x27;</span><br></pre></td></tr></table></figure></li><li><p>使用plsql图形创建</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221102129811.png" alt="image-20220221102129811"></p></li></ul><blockquote><p>使用dblink</p></blockquote><p><strong>表名@link名</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="存储过程"><a href="#存储过程" class="headerlink" title="存储过程"></a>存储过程</h1><p>存储过程的一些知识，测试、入参</p><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221092538826.png" alt="image-20220221092538826"></p><blockquote><p>入参clob类型</p></blockquote><p>将clob类型改为String类型</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221092704423.png" alt="image-20220221092704423"></p><p> 直接使用String字符串测试</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221092740869.png" alt="image-20220221092740869"></p><h1 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h1><blockquote><p>获取uuid</p></blockquote><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--函数返回的是32位 </span></span><br><span class="line"><span class="comment">--可以使用字符串分隔获取自己想要的位数</span></span><br><span class="line">sys_guid()</span><br></pre></td></tr></table></figure><h1 id="序列-Sequence"><a href="#序列-Sequence" class="headerlink" title="序列(Sequence)"></a>序列(Sequence)</h1><blockquote><p>创建序列</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CREATE SEQUENCE SEQ_DEMO INCREMENT BY 1 START WITH 1 NOMAXvalue NOCYCLE NOCACHE;</span><br></pre></td></tr></table></figure><ol><li><p>语法</p><blockquote><p>CREATE SEQUENCE 序列名 [相关参数]</p></blockquote></li><li><p>参数说明</p><blockquote><p>INCREMENT BY :序列变化的步进，负值表示递减。(默认1)<br>START WITH:序列的初始值 。(默认1)<br>MAXvalue:序列可生成的最大值。(默认不限制最大值，NOMAXVALUE)<br>MINVALUE:序列可生成的最小值。(默认不限制最小值，NOMINVALUE)<br>CYCLE:用于定义当序列产生的值达到限制值后是否循环(NOCYCLE:不循环，CYCLE:循环)。<br>CACHE:表示缓存序列的个数，数据库异常终止可能会导致序列中断不连续的情况，默认值为20，如果不使用缓存可设置NOCACHE</p></blockquote></li><li><p>修改、删除序列</p><blockquote><p>使用 <code>alter</code> 命令进行修改</p><p>使用 <code>drop</code> 命令删除</p></blockquote></li></ol><blockquote><p>使用序列</p></blockquote><ul><li><p>currval</p><ul><li><code>currval</code> 表示序列的当前值，新序列必须使用一次<code>nextval</code> 才能获取到值，否则会报错</li></ul></li><li><p>nextval</p><ul><li><code>nextval</code> 表示序列的下一个值。新序列首次使用时获取的是该序列的初始值，从第二次使用时开始按照设置的步进递增</li></ul></li></ul><blockquote><p>查询序列的值：select seq_name.[currval,nextval] from dual;<br>查看所有已创建的序列：select * from user_sequences<br>SQL语句中使用：insert into table (id) values (seq_name.nextval)</p></blockquote><h2 id="PLSQL图像化操作"><a href="#PLSQL图像化操作" class="headerlink" title="PLSQL图像化操作"></a>PLSQL图像化操作</h2><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221095508801.png" alt="image-20220221095508801"></p><h1 id="包概念"><a href="#包概念" class="headerlink" title="包概念"></a>包概念</h1><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221095735510.png" alt="image-20220221095735510"></p><p>包下有存储过程、函数、类型、变量等等。调用时使用<strong>包名.变量名</strong></p><h2 id="PLSQL下编辑包下存储过程"><a href="#PLSQL下编辑包下存储过程" class="headerlink" title="PLSQL下编辑包下存储过程"></a>PLSQL下编辑包下存储过程</h2><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221100021421.png" alt="image-20220221100021421"></p><p>左边是声明语句，右边是body，修改完要重新编译</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221100147575.png" alt="image-20220221100147575"></p><h1 id="Database-link"><a href="#Database-link" class="headerlink" title="Database link"></a>Database link</h1><p>oracle在进行跨库访问时，可以通过创建dblink实现,创建dblink，以及通过dblink完成插入、修改、删除等操作。</p><blockquote><p>创建dblink</p></blockquote><ul><li><p>使用sql创建</p><blockquote><p>语法</p><p><strong>create public database link linekName connect to username identified by “password” USING ‘dbname’</strong></p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">-- 示例</span><br><span class="line">create public database link TESTLINK2 connect to test identified by &quot;123456&quot; USING &#x27;ORCL2&#x27;</span><br></pre></td></tr></table></figure></li><li><p>使用plsql图形创建</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220221102129811.png" alt="image-20220221102129811"></p></li></ul><blockquote><p>使用dblink</p></blockquote><p><strong>表名@link名</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># VARCHAR2是字节还是字符</span><br><span class="line"></span><br><span class="line">varchar2(20) 中的20 表示20个字节</span><br><span class="line"></span><br><span class="line">&gt; oracle中varchar2(20) 汉字 占位 跟字符集设置有关</span><br><span class="line">&gt;</span><br><span class="line">&gt; * 字符集设置成ZHS16GBK：汉字占2个字节。</span><br><span class="line">&gt;</span><br><span class="line">&gt; * 字符集设置成AL32UTF8：汉字占3个字节。</span><br><span class="line"></span><br><span class="line">```plsql</span><br><span class="line">-- 查询字符集</span><br><span class="line">select * from v$nls_parameters t where t.PARAMETER=&#x27;NLS_CHARACTERSET&#x27;;</span><br></pre></td></tr></table></figure><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220228100421049.png" alt="image-20220228100421049"></p><h1 id="decode函数显示不全问题"><a href="#decode函数显示不全问题" class="headerlink" title="decode函数显示不全问题"></a>decode函数显示不全问题</h1><blockquote><p>描述</p></blockquote><p>decode的判断结果没有全部显示</p><p> <img src="/2022/02/20/Oracle%E7%89%B9%E6%80%A7/image-20220228101002250.png" alt="image-20220228101002250"></p><blockquote><p>解决方法</p></blockquote><ol><li>在decode后面的第一个判断条件结果表达式 多加几位字符</li></ol><h1 id="条件判断函数-case-when-then-else"><a href="#条件判断函数-case-when-then-else" class="headerlink" title="条件判断函数 case-when-then-else"></a>条件判断函数 case-when-then-else</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"> --第一种格式</span><br><span class="line"> select case aae100</span><br><span class="line">          when &#x27;1&#x27; then</span><br><span class="line">           &#x27;有效有&#x27;</span><br><span class="line">          when &#x27;0&#x27; then</span><br><span class="line">           &#x27;无效&#x27;</span><br><span class="line">          else</span><br><span class="line">           &#x27;导入&#x27;</span><br><span class="line">        end</span><br><span class="line">   from rc11;</span><br><span class="line">--第二种格式</span><br><span class="line">select case</span><br><span class="line">         when aae100 = &#x27;1&#x27; then</span><br><span class="line">          &#x27;有效aa&#x27;</span><br><span class="line">         when aae100 = &#x27;0&#x27; then</span><br><span class="line">          &#x27;无效&#x27;</span><br><span class="line">         else</span><br><span class="line">          &#x27;导入&#x27;</span><br><span class="line">       end</span><br><span class="line">  from rc11;</span><br></pre></td></tr></table></figure><blockquote><p>问题：</p><ul><li>使用判断函数后 表达式结果显示不全</li></ul><p>解决方法：</p><ul><li>在第一判断条件后多加1位中文字符，相当于两字节字符</li></ul></blockquote>]]></content>
       
       
       <categories>
