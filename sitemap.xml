@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://wang_zhe343621.gitee.io/2022/02/20/centos7%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3/</loc>
+    
+    <lastmod>2022-02-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://wang_zhe343621.gitee.io/2022/02/28/Nginx%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</loc>
+    
+    <lastmod>2022-02-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://wang_zhe343621.gitee.io/2022/02/28/MySQL%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</loc>
     
     <lastmod>2022-02-28</lastmod>
@@ -111,15 +129,6 @@
   
   <url>
     <loc>http://wang_zhe343621.gitee.io/2022/02/20/SecureFX%E4%B8%AD%E6%96%87%E4%B9%B1%E7%A0%81/</loc>
-    
-    <lastmod>2022-02-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://wang_zhe343621.gitee.io/2022/02/20/centos7%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3/</loc>
     
     <lastmod>2022-02-21</lastmod>
     
@@ -258,6 +267,13 @@
   
   <url>
     <loc>http://wang_zhe343621.gitee.io/tags/MySQL/</loc>
+    <lastmod>2022-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wang_zhe343621.gitee.io/tags/Nginx/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -413,6 +429,13 @@
   </url>
   
   <url>
+    <loc>http://wang_zhe343621.gitee.io/categories/Nginx/</loc>
+    <lastmod>2022-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/DBSM/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -427,7 +450,7 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/question/SpringBoot/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/question/SecureFX/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -435,6 +458,13 @@
   
   <url>
     <loc>http://wang_zhe343621.gitee.io/categories/question/MySQL/</loc>
+    <lastmod>2022-02-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wang_zhe343621.gitee.io/categories/question/SpringBoot/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -455,13 +485,6 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/DBSM/Oracle/</loc>
-    <lastmod>2022-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/git/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
@@ -469,7 +492,7 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/question/PLSQL/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/DBSM/Oracle/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -497,14 +520,14 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/css/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/question/PLSQL/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/question/SecureFX/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/css/</loc>
     <lastmod>2022-02-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

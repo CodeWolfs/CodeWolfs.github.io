@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Nginx使用记录</title>
+      <link href="/2022/02/28/Nginx%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+      <url>/2022/02/28/Nginx%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Nginx-重要概念"><a href="#Nginx-重要概念" class="headerlink" title="Nginx 重要概念"></a>Nginx 重要概念</h1><h2 id="正向代理和反向代理"><a href="#正向代理和反向代理" class="headerlink" title="正向代理和反向代理"></a>正向代理和反向代理</h2><h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><h2 id="动静分离"><a href="#动静分离" class="headerlink" title="动静分离"></a>动静分离</h2><p>Nginx linux下安装</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Nginx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Nginx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot 使用记录</title>
       <link href="/2022/02/28/SpringBoot-%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
       <url>/2022/02/28/SpringBoot-%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</url>
@@ -317,7 +342,7 @@
       <link href="/2022/02/20/centos7%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3/"/>
       <url>/2022/02/20/centos7%E5%BC%80%E5%90%AF%E7%AB%AF%E5%8F%A3/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>开启端口 15672</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=15672/tcp --permanent</span><br></pre></td></tr></table></figure><blockquote><p>重启防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart firewalld.service</span><br><span class="line">或者</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure><blockquote><p>查看端口的状态</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --query-port=15672/tcp</span><br></pre></td></tr></table></figure><blockquote><p>关闭防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld.service </span><br></pre></td></tr></table></figure><blockquote><p>查看端口占用状态</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -lnp|grep 15672</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>开启端口 15672</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --zone=public --add-port=15672/tcp --permanent</span><br></pre></td></tr></table></figure><blockquote><p>重启防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart firewalld.service</span><br><span class="line">或者</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure><blockquote><p>查看端口的状态</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --query-port=15672/tcp</span><br></pre></td></tr></table></figure><blockquote><p>关闭防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld.service </span><br></pre></td></tr></table></figure><blockquote><p>查看端口占用状态</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -lnp|grep 15672</span><br></pre></td></tr></table></figure><blockquote><p>查看开放端口列表</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-all</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
