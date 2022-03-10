@@ -6,7 +6,7 @@
   <link href="http://wang_zhe343621.gitee.io/atom.xml" rel="self"/>
   
   <link href="http://wang_zhe343621.gitee.io/"/>
-  <updated>2022-02-28T08:28:24.193Z</updated>
+  <updated>2022-03-10T02:28:31.946Z</updated>
   <id>http://wang_zhe343621.gitee.io/</id>
   
   <author>
@@ -17,13 +17,76 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Zookeeper使用记录</title>
+    <link href="http://wang_zhe343621.gitee.io/2022/03/10/Zookeeper%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://wang_zhe343621.gitee.io/2022/03/10/Zookeeper%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-03-10T02:23:06.000Z</published>
+    <updated>2022-03-10T02:28:31.946Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="基础了解和工具使用"><a href="#基础了解和工具使用" class="headerlink" title="基础了解和工具使用"></a>基础了解和工具使用</h1><blockquote><p>pretty zoo工具使用</p></blockquote><p><a href="https://github.com/vran-dev/PrettyZoo">PrettyZoo下载地址</a></p>]]></content>
+    
+    
+    <summary type="html">Zookeeper使用记录</summary>
+    
+    
+    
+    <category term="Zookeeper" scheme="http://wang_zhe343621.gitee.io/categories/Zookeeper/"/>
+    
+    
+    <category term="Zookeeper" scheme="http://wang_zhe343621.gitee.io/tags/Zookeeper/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>SpringCloud学习记录</title>
+    <link href="http://wang_zhe343621.gitee.io/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
+    <id>http://wang_zhe343621.gitee.io/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-03-04T07:14:57.000Z</published>
+    <updated>2022-03-10T02:26:23.427Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前置基础"><a href="#前置基础" class="headerlink" title="前置基础"></a>前置基础</h1><h2 id="springboot和springcloud版本匹配"><a href="#springboot和springcloud版本匹配" class="headerlink" title="springboot和springcloud版本匹配"></a>springboot和springcloud版本匹配</h2><p><a href="https://start.spring.io/actuator/info">查询网站</a></p><p>获取json字符串后使用工具进行格式化</p><h2 id="版本选择"><a href="#版本选择" class="headerlink" title="版本选择"></a>版本选择</h2><p><strong>选择官网推荐的</strong></p><p> <img src="/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/image-20220304152136541.png" alt="image-20220304152136541"></p><p> 使用官网推荐的版本</p><p> <img src="/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/image-20220304152152635.png" alt="image-20220304152152635"></p><h2 id="springcloud组件"><a href="#springcloud组件" class="headerlink" title="springcloud组件"></a>springcloud组件</h2><ul><li>服务注册与发现<ul><li>EUREKA</li></ul></li></ul><h1 id="Eureka"><a href="#Eureka" class="headerlink" title="Eureka"></a>Eureka</h1><ol><li>什么是服务治理？</li></ol><ul><li>eureka中application 字段与 服务的application name  相同</li></ul><p><img src="/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/image-20220308112955737.png" alt="image-20220308112955737"></p><h2 id="eureka集群"><a href="#eureka集群" class="headerlink" title="eureka集群"></a>eureka集群</h2><ul><li><p>eureka服务器之间相互注册</p></li><li><p>服务在多个eureka上注册</p></li></ul><h2 id="微服务集群"><a href="#微服务集群" class="headerlink" title="微服务集群"></a>微服务集群</h2><ul><li>服务名称相同，服务器或者端口不同</li><li>消费者使用服务名称去请求</li><li>restTemplate 作负载均衡</li></ul><h2 id="actuator-服务信息显示"><a href="#actuator-服务信息显示" class="headerlink" title="actuator 服务信息显示"></a>actuator 服务信息显示</h2><ul><li><p>主机名称的修改</p><ul><li><p>默认显示机器名称+项目名称+端口号</p></li><li><p>```yml<br>instance-id: payment8001</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">* 访问信息有ip地址</span><br><span class="line"></span><br><span class="line">  * ```yml</span><br><span class="line">    prefer-ip-address: true</span><br></pre></td></tr></table></figure></li><li><p> <img src="/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/image-20220309115309930.png" alt="image-20220309115309930"></p></li></ul></li></ul><h2 id="获取薇服务信息"><a href="#获取薇服务信息" class="headerlink" title="获取薇服务信息"></a>获取薇服务信息</h2><p>主启动类上添加 @EnableDiscoveryClient注解</p><p>获取服务信息：使用import org.springframework.cloud.client.discovery.DiscoveryClient;这个类</p><p>获取具体服务实例信息：使用DiscoveryClient.getinstances</p><h2 id="Eureka的自我保护机制"><a href="#Eureka的自我保护机制" class="headerlink" title="Eureka的自我保护机制"></a>Eureka的自我保护机制</h2><ul><li><p>自我保护机制的原因</p><ul><li>防止微服务因为与eureka服务器暂时不连通，而导致eureka服务器将微服务删除</li><li>宁可保留错误的信息，也不会盲目注销服务</li></ul></li><li><p>配置</p><ul><li><p>eureka服务端</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">enable-self-preservation:</span> <span class="literal">false</span> <span class="comment"># 关闭自我保护机制</span></span><br><span class="line"><span class="attr">eviction-interval-timer-in-ms:</span> <span class="number">2000</span> <span class="comment">#超时2s后驱逐服务</span></span><br></pre></td></tr></table></figure></li><li><p>eureka客户端</p></li></ul><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lease-renewal-interval-in-seconds:</span> <span class="number">2</span> <span class="comment"># 发送心跳的间隔，每2秒发送一次</span></span><br><span class="line"><span class="attr">lease-expiration-duration-in-seconds:</span> <span class="number">9</span> <span class="comment">#eureka 最后一次收到心跳，之后的等待时间</span></span><br></pre></td></tr></table></figure></li></ul><h1 id="Zookeeper"><a href="#Zookeeper" class="headerlink" title="Zookeeper"></a>Zookeeper</h1><h2 id="linux-安装zookeeper"><a href="#linux-安装zookeeper" class="headerlink" title="linux 安装zookeeper"></a>linux 安装zookeeper</h2><p><strong>配置文件说明</strong></p><p> <img src="/2022/03/04/SpringCloud%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/image-20220309154802184.png" alt="image-20220309154802184"></p><h2 id="安装zookeeper遇到的问题"><a href="#安装zookeeper遇到的问题" class="headerlink" title="安装zookeeper遇到的问题"></a>安装zookeeper遇到的问题</h2><ol><li><p>服务启动成功，查看状态却是失败状态，客户端也连接不上</p><blockquote><p>原因是：没有安装jdk环境</p></blockquote></li></ol>]]></content>
+    
+    
+    <summary type="html">SpringCloud学习记录</summary>
+    
+    
+    
+    <category term="SpringCloud" scheme="http://wang_zhe343621.gitee.io/categories/SpringCloud/"/>
+    
+    
+    <category term="SpringCloud" scheme="http://wang_zhe343621.gitee.io/tags/SpringCloud/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Linux学习使用记录</title>
+    <link href="http://wang_zhe343621.gitee.io/2022/03/02/Linux%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
+    <id>http://wang_zhe343621.gitee.io/2022/03/02/Linux%E5%AD%A6%E4%B9%A0%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
+    <published>2022-03-02T00:47:29.000Z</published>
+    <updated>2022-03-10T02:26:19.408Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>查看进程</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -aux | grep redis</span><br></pre></td></tr></table></figure><blockquote><p>查看端口</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -lanp | grep 6379</span><br></pre></td></tr></table></figure><h1 id="防火墙"><a href="#防火墙" class="headerlink" title="防火墙"></a>防火墙</h1><blockquote><p>查看开通的端口</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --list-all</span><br></pre></td></tr></table></figure><blockquote><p>打开防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl start firewalld</span><br></pre></td></tr></table></figure><blockquote><p>关闭防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl stop firewalld</span><br></pre></td></tr></table></figure><blockquote><p>禁止防火墙</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl <span class="built_in">disable</span> firewalld</span><br></pre></td></tr></table></figure><blockquote><p>查看防火墙状态</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld </span><br></pre></td></tr></table></figure><h1 id="冷知识"><a href="#冷知识" class="headerlink" title="冷知识"></a>冷知识</h1><ul><li>linux自带jre环境</li></ul>]]></content>
+    
+    
+    <summary type="html">Linux学习使用记录</summary>
+    
+    
+    
+    <category term="Linux" scheme="http://wang_zhe343621.gitee.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="http://wang_zhe343621.gitee.io/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Nginx使用记录</title>
     <link href="http://wang_zhe343621.gitee.io/2022/02/28/Nginx%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
     <id>http://wang_zhe343621.gitee.io/2022/02/28/Nginx%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
     <published>2022-02-28T02:50:32.000Z</published>
-    <updated>2022-02-28T08:28:24.193Z</updated>
+    <updated>2022-03-03T09:38:01.800Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Nginx-重要概念"><a href="#Nginx-重要概念" class="headerlink" title="Nginx 重要概念"></a>Nginx 重要概念</h1><h2 id="正向代理和反向代理"><a href="#正向代理和反向代理" class="headerlink" title="正向代理和反向代理"></a>正向代理和反向代理</h2><h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><h2 id="动静分离"><a href="#动静分离" class="headerlink" title="动静分离"></a>动静分离</h2><p>Nginx linux下安装</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Nginx-重要概念"><a href="#Nginx-重要概念" class="headerlink" title="Nginx 重要概念"></a>Nginx 重要概念</h1><h2 id="正向代理和反向代理"><a href="#正向代理和反向代理" class="headerlink" title="正向代理和反向代理"></a>正向代理和反向代理</h2><h2 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h2><h2 id="动静分离"><a href="#动静分离" class="headerlink" title="动静分离"></a>动静分离</h2><h1 id="Nginx-linux下安装"><a href="#Nginx-linux下安装" class="headerlink" title="Nginx linux下安装"></a>Nginx linux下安装</h1><h1 id="Nginx-常用命令"><a href="#Nginx-常用命令" class="headerlink" title="Nginx 常用命令"></a>Nginx 常用命令</h1><blockquote><p>nginx命令所在路径</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/<span class="built_in">local</span>/software/nginx-1.20.2/sbin</span><br></pre></td></tr></table></figure><blockquote><p>查看版本号</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -v</span><br></pre></td></tr></table></figure><blockquote><p>查看nginx进程</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps -ef | grep nginx</span><br></pre></td></tr></table></figure><blockquote><p>停止nginx</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -s stop</span><br></pre></td></tr></table></figure><blockquote><p>启动nginx</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx</span><br></pre></td></tr></table></figure><blockquote><p>重新加载 nginx</p></blockquote><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./nginx -s reload</span><br></pre></td></tr></table></figure><h1 id="Nginx-配置文件"><a href="#Nginx-配置文件" class="headerlink" title="Nginx 配置文件"></a>Nginx 配置文件</h1><blockquote><p>配置文件位置</p></blockquote><p><strong>/usr/local/software/nginx-1.20.2/conf/nginx.conf</strong></p><blockquote><p>配置文件内容详解</p></blockquote><h2 id="第一部分：全局块"><a href="#第一部分：全局块" class="headerlink" title="第一部分：全局块"></a>第一部分：全局块</h2><p>配置nginx 服务器整体运行的一些指令：用户组、日志、进程pid、nginx进程数</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#定义Nginx运行的用户和用户组</span></span><br><span class="line"><span class="string">user</span> <span class="string">www</span> <span class="string">www;</span></span><br><span class="line"><span class="comment">#nginx进程数，建议设置为等于CPU总核心数。</span></span><br><span class="line"><span class="string">worker_processes</span> <span class="number">8</span><span class="string">;</span></span><br><span class="line"><span class="comment">#全局错误日志定义类型，[ debug | info | notice | warn | error | crit ]</span></span><br><span class="line"><span class="string">error_log</span> <span class="string">/usr/local/nginx/logs/error.log</span> <span class="string">info;</span></span><br><span class="line"><span class="comment">#进程pid文件</span></span><br><span class="line"><span class="string">pid</span> <span class="string">/usr/local/nginx/logs/nginx.pid;</span></span><br></pre></td></tr></table></figure><h2 id="第二部分：events块"><a href="#第二部分：events块" class="headerlink" title="第二部分：events块"></a>第二部分：events块</h2><p>配置nginx服务器与用户的网络连接</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 连接最大数</span></span><br><span class="line">worker_connections  1024;</span><br></pre></td></tr></table></figure><h2 id="第三部分：http块"><a href="#第三部分：http块" class="headerlink" title="第三部分：http块"></a>第三部分：http块</h2><p>http块中包含 <strong>http全局块</strong> 和 <strong>server块</strong></p><h3 id="http全局块"><a href="#http全局块" class="headerlink" title="http全局块"></a>http全局块</h3><h3 id="server块"><a href="#server块" class="headerlink" title="server块"></a>server块</h3><p>server块中包含 <strong>server全局块</strong> 和 <strong>location块</strong></p><h4 id="server全局块"><a href="#server全局块" class="headerlink" title="server全局块"></a>server全局块</h4><h4 id="location块"><a href="#location块" class="headerlink" title="location块"></a>location块</h4><blockquote><p>proxy_pass   路径;</p></blockquote><blockquote><p>路径匹配规则</p></blockquote><h2 id="负载均衡配置"><a href="#负载均衡配置" class="headerlink" title="负载均衡配置"></a>负载均衡配置</h2><h2 id="动静分离配置"><a href="#动静分离配置" class="headerlink" title="动静分离配置"></a>动静分离配置</h2><blockquote><p>location 中的root,index  ,autoindex</p></blockquote><h1 id="nginx-高可用集群"><a href="#nginx-高可用集群" class="headerlink" title="nginx 高可用集群"></a>nginx 高可用集群</h1><blockquote><p>2台nginx服务器</p><p>2台服务器安装keepalived</p></blockquote><h2 id="keepalived-配置文件"><a href="#keepalived-配置文件" class="headerlink" title="keepalived 配置文件"></a>keepalived 配置文件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">global_defs &#123;</span><br><span class="line">   notification_email &#123;</span><br><span class="line">     acassen@firewall.loc</span><br><span class="line">     failover@firewall.loc</span><br><span class="line">     sysadmin@firewall.loc</span><br><span class="line">   &#125;</span><br><span class="line">   notification_email_from Alexandre.Cassen@firewall.loc</span><br><span class="line">   smtp_server 192.168.200.1</span><br><span class="line">   smtp_connect_timeout 30</span><br><span class="line">   router_id LVS_DEVEL<span class="comment"># 路由，您的服务器中配置的dns映射，在etc/host文件中查看</span></span><br><span class="line">   vrrp_skip_check_adv_addr</span><br><span class="line">   vrrp_strict</span><br><span class="line">   vrrp_garp_interval 0</span><br><span class="line">   vrrp_gna_interval 0</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">vrrp_instance VI_1 &#123;</span><br><span class="line">    state MASTER<span class="comment">#主服务器MASTER,备份服务器BACKUP</span></span><br><span class="line">    interface eth0<span class="comment">#网卡</span></span><br><span class="line">    virtual_router_id 51<span class="comment">#主备机的值要一致</span></span><br><span class="line">    priority 100<span class="comment">#优先级，一般主服务器设置100 ， 备份服务器要&lt;100</span></span><br><span class="line">    advert_int 1</span><br><span class="line">    authentication &#123;<span class="comment"># 认证校验</span></span><br><span class="line">        auth_type PASS</span><br><span class="line">        auth_pass 1111</span><br><span class="line">    &#125;</span><br><span class="line">    virtual_ipaddress &#123;</span><br><span class="line">        192.168.200.16<span class="comment">#虚拟IP地址</span></span><br><span class="line">        192.168.200.17</span><br><span class="line">        192.168.200.18</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h1 id="nginx-原理"><a href="#nginx-原理" class="headerlink" title="nginx 原理"></a>nginx 原理</h1><p>master 和 work </p><p>一个master ；多个worker</p>]]></content>
     
     
     <summary type="html">Nginx 学习使用记录</summary>
@@ -88,9 +151,9 @@
     <link href="http://wang_zhe343621.gitee.io/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/"/>
     <id>http://wang_zhe343621.gitee.io/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/</id>
     <published>2022-02-21T06:53:58.000Z</published>
-    <updated>2022-02-28T01:54:15.028Z</updated>
+    <updated>2022-03-04T07:11:26.104Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="图片压缩工具"><a href="#图片压缩工具" class="headerlink" title="图片压缩工具"></a>图片压缩工具</h1><ul><li><p><a href="https://saerasoft.com/caesium/">caesium</a></p><p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220221145835788.png" alt="image-20220221145835788"></p></li></ul><h1 id="json工具、加密解密、网络等等工具网站"><a href="#json工具、加密解密、网络等等工具网站" class="headerlink" title="json工具、加密解密、网络等等工具网站"></a>json工具、加密解密、网络等等工具网站</h1><ul><li><p><a href="https://www.bejson.com/enc/md5dsc/">BEJSON</a></p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220228095232243.png" alt="image-20220228095232243" style="zoom:80%;"></li><li><p><a href="https://www.fly63.com/tool/home.html">FLY63</a></p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220228095341058.png" alt="image-20220228095341058" style="zoom:80%;"></li><li></li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="图片压缩工具"><a href="#图片压缩工具" class="headerlink" title="图片压缩工具"></a>图片压缩工具</h1><ul><li><p><a href="https://saerasoft.com/caesium/">caesium</a></p><p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220221145835788.png" alt="image-20220221145835788"></p></li></ul><h1 id="json工具、加密解密、网络等等工具网站"><a href="#json工具、加密解密、网络等等工具网站" class="headerlink" title="json工具、加密解密、网络等等工具网站"></a>json工具、加密解密、网络等等工具网站</h1><ul><li><p><a href="https://www.bejson.com/enc/md5dsc/">BEJSON</a></p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220228095232243.png" alt="image-20220228095232243" style="zoom:80%;"></li><li><p><a href="https://www.fly63.com/tool/home.html">FLY63</a></p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220228095341058.png" alt="image-20220228095341058" style="zoom:80%;"></li><li><p><a href="https://tool.lu/">Tool.lu</a></p><p><img src="/2022/02/21/%E5%A5%BD%E7%94%A8%E7%9A%84%E5%B7%A5%E5%85%B7/image-20220304151112548.png" alt="image-20220304151112548"></p></li></ul>]]></content>
     
     
     <summary type="html">记录找到的好用的工具</summary>
@@ -420,30 +483,6 @@
     <category term="hexo" scheme="http://wang_zhe343621.gitee.io/tags/hexo/"/>
     
     <category term="blog" scheme="http://wang_zhe343621.gitee.io/tags/blog/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://wang_zhe343621.gitee.io/2022/01/29/hello-world/"/>
-    <id>http://wang_zhe343621.gitee.io/2022/01/29/hello-world/</id>
-    <published>2022-01-29T08:18:42.000Z</published>
-    <updated>2022-02-20T10:29:18.380Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p><h3 id="Download-butterfly-theme"><a href="#Download-butterfly-theme" class="headerlink" title="Download butterfly theme"></a>Download butterfly theme</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/immyw/hexo-theme-butterfly.git themes/butterfly</span><br></pre></td></tr></table></figure><p>More info: <a href="https://butterfly.js.org/posts/21cfbf15/">butterfly </a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    <category term="hexo" scheme="http://wang_zhe343621.gitee.io/categories/hexo/"/>
-    
-    
-    <category term="hexo" scheme="http://wang_zhe343621.gitee.io/tags/hexo/"/>
     
   </entry>
   
