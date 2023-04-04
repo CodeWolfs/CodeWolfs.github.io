@@ -6,7 +6,7 @@
   <link href="http://wang_zhe343621.gitee.io/atom.xml" rel="self"/>
   
   <link href="http://wang_zhe343621.gitee.io/"/>
-  <updated>2023-04-04T04:12:31.030Z</updated>
+  <updated>2023-04-04T04:47:14.078Z</updated>
   <id>http://wang_zhe343621.gitee.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://wang_zhe343621.gitee.io/2023/04/04/vscode%E5%8A%A0%E8%BD%BDweb%E8%A7%86%E5%9B%BE%EF%BC%8C%E5%9B%BE%E7%89%87%E6%8A%A5%E9%94%99/"/>
     <id>http://wang_zhe343621.gitee.io/2023/04/04/vscode%E5%8A%A0%E8%BD%BDweb%E8%A7%86%E5%9B%BE%EF%BC%8C%E5%9B%BE%E7%89%87%E6%8A%A5%E9%94%99/</id>
     <published>2023-04-04T04:06:20.000Z</published>
-    <updated>2023-04-04T04:12:31.030Z</updated>
+    <updated>2023-04-04T04:47:14.078Z</updated>
     
     <content type="html"><![CDATA[<h1 id="vscode加载web-视图，报错-“Error-Could-not-register-serviceworkers-InvalidstateError-Failed-to-regist“"><a href="#vscode加载web-视图，报错-“Error-Could-not-register-serviceworkers-InvalidstateError-Failed-to-regist“" class="headerlink" title="vscode加载web 视图，报错:“Error: Could not register serviceworkers: InvalidstateError: Failed to regist“"></a>vscode加载web 视图，报错:“Error: Could not register serviceworkers: InvalidstateError: Failed to regist“</h1><h2 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h2><ol><li>关闭vscode</li><li><code>win+r</code> 打开cmd<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">code --no-sandbox</span><br></pre></td></tr></table></figure>会重启vscode，就可以查看了</li></ol><h2 id="引用文献"><a href="#引用文献" class="headerlink" title="引用文献"></a>引用文献</h2><p>[1] <a href="https://blog.csdn.net/m0_58724783/article/details/127879777?spm=1001.2101.3001.6650.5&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-5-127879777-blog-125405459.235%5Ev27%5Epc_relevant_multi_platform_whitelistv3&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~Rate-5-127879777-blog-125405459.235%5Ev27%5Epc_relevant_multi_platform_whitelistv3&utm_relevant_index=5">vscode加载web 视图</a></p>]]></content>
     
