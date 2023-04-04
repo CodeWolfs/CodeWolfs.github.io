@@ -66,9 +66,9 @@
     
     <category term="centos7" scheme="http://wang_zhe343621.gitee.io/tags/centos7/"/>
     
-    <category term="docker" scheme="http://wang_zhe343621.gitee.io/tags/docker/"/>
-    
     <category term="runlike" scheme="http://wang_zhe343621.gitee.io/tags/runlike/"/>
+    
+    <category term="docker" scheme="http://wang_zhe343621.gitee.io/tags/docker/"/>
     
   </entry>
   

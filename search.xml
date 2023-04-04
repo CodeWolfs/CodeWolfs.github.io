@@ -57,9 +57,9 @@
             
             <tag> centos7 </tag>
             
-            <tag> docker </tag>
-            
             <tag> runlike </tag>
+            
+            <tag> docker </tag>
             
         </tags>
       
@@ -964,9 +964,9 @@
       
         <tags>
             
-            <tag> linux </tag>
-            
             <tag> centos7 </tag>
+            
+            <tag> linux </tag>
             
         </tags>
       
