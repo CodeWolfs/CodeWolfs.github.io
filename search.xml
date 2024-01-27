@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Linux 内核升级</title>
+      <link href="/2024/01/27/Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7/"/>
+      <url>/2024/01/27/Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>这一知识来源于开启 bbr3 <br><br><a href="http://elrepo.org/tiki/HomePage">内核更新官网</a></p><p><a href="https://youtu.be/rliQg3Z4i_8?si=c8BPAt7l54KQ6xop">bbr3 开启视频地址</a></p><p><a href="https://drive.google.com/file/d/1kt_AKvCi5X3uNlH3LVOXkGbXitz4KOOM/view">bbr3 原文档地址</a></p><h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><ol><li>更新系统和软件包：<br>yum update</li><li>查看系统版本：<br>[root@amber ~]# cat /etc/redhat-release</li><li>安装 elrepo 并升级内核：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">   rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org</span><br><span class="line">   yum install https://www.elrepo.org/elrepo-release-7.el7.elrepo.noarch.rpm</span><br><span class="line">   安装 kernel-ml 内核</span><br><span class="line">   yum --enablerepo=elrepo-kernel install kernel-m</span><br><span class="line">   ````</span><br><span class="line"></span><br><span class="line">4. 更新 grub 文件并重启系统：</span><br><span class="line">   ```bash</span><br><span class="line">   <span class="comment">#查看内核版本</span></span><br><span class="line">   uname -r</span><br><span class="line">   <span class="comment">#查看系统中所有可引导的内核版本：</span></span><br><span class="line">   egrep ^menuentry /etc/grub2.cfg | cut -f 2 -d \<span class="string">&#x27;</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">   #设置我们 linux 系统启动后，加载并引导第一个内核</span></span><br><span class="line"><span class="string">   grub2-set-default 0</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">   reboot</span></span><br></pre></td></tr></table></figure></li></ol><ol start="5"><li>重新查看内核版本<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure></li></ol><h1 id="开启-bbr"><a href="#开启-bbr" class="headerlink" title="开启 bbr"></a>开启 bbr</h1><ol><li>设置系统配置文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysctl.conf</span><br><span class="line"><span class="comment"># 在文件末尾添加如下内容</span></span><br><span class="line">net.core.default_qdisc = fq</span><br><span class="line">net.ipv4.tcp_congestion_control = bb</span><br></pre></td></tr></table></figure></li></ol><ol start="2"><li>加载系统参数<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sysctl -p</span><br></pre></td></tr></table></figure></li><li>确定 bbr 已经成功开启： <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sysctl net.ipv4.tcp_available_congestion_control</span><br><span class="line">sysctl net.ipv4.tcp_available_congestion_control = reno cubic bbr</span><br><span class="line">[root@amber ~]<span class="comment"># lsmod | grep bbr</span></span><br><span class="line">tcp_bbr                20480  1</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>前端知识列表</title>
+      <link href="/2023/10/10/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%88%97%E8%A1%A8/"/>
+      <url>/2023/10/10/%E5%89%8D%E7%AB%AF%E7%9F%A5%E8%AF%86%E5%88%97%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前端知识列表"><a href="#前端知识列表" class="headerlink" title="前端知识列表"></a>前端知识列表</h1><p><a href="https://blog.csdn.net/u014061630/article/details/81359144?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169686741416800197027685%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=169686741416800197027685&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81359144-null-null.142%5Ev95%5Econtrol&amp;utm_term=markdown%E8%AF%AD%E6%B3%95&amp;spm=1018.2226.3001.4187">https://blog.csdn.net/u014061630/article/details/81359144?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169686741416800197027685%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&amp;request_id=169686741416800197027685&amp;biz_id=0&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-81359144-null-null.142^v95^control&amp;utm_term=markdown%E8%AF%AD%E6%B3%95&amp;spm=1018.2226.3001.4187</a></p><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><table><thead><tr><th align="center">名称</th><th align="center">介绍</th></tr></thead><tbody><tr><td align="center">nvm</td><td align="center">管理多个版本的node</td></tr><tr><td align="center">animate.css</td><td align="center">css动画库</td></tr><tr><td align="center">greensock</td><td align="center">js 动画库</td></tr></tbody></table><h2 id="Vue"><a href="#Vue" class="headerlink" title="Vue"></a>Vue</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 1 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>vscode加载web视图，图片报错</title>
       <link href="/2023/04/04/vscode%E5%8A%A0%E8%BD%BDweb%E8%A7%86%E5%9B%BE%EF%BC%8C%E5%9B%BE%E7%89%87%E6%8A%A5%E9%94%99/"/>
       <url>/2023/04/04/vscode%E5%8A%A0%E8%BD%BDweb%E8%A7%86%E5%9B%BE%EF%BC%8C%E5%9B%BE%E7%89%87%E6%8A%A5%E9%94%99/</url>
@@ -596,14 +646,14 @@
       
       <categories>
           
-          <category> Linux </category>
+          <category> linux </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Linux </tag>
+            <tag> linux </tag>
             
         </tags>
       
@@ -964,9 +1014,9 @@
       
         <tags>
             
-            <tag> centos7 </tag>
-            
             <tag> linux </tag>
+            
+            <tag> centos7 </tag>
             
         </tags>
       
