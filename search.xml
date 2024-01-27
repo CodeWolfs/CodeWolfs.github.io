@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>docker-compose 使用</title>
+      <link href="/2024/01/28/docker-compose-%E4%BD%BF%E7%94%A8/"/>
+      <url>/2024/01/28/docker-compose-%E4%BD%BF%E7%94%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><ol><li>yum 安装（版本很低）<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install docker-compose</span><br></pre></td></tr></table></figure></li><li>git 下载文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#下载文件</span></span><br><span class="line">sudo curl -L <span class="string">&quot;https://github.com/docker/compose/releases/latest/download/docker-compose-<span class="subst">$(uname -s)</span>-<span class="subst">$(uname -m)</span>&quot;</span> -o /usr/<span class="built_in">local</span>/bin/docker-compose</span><br><span class="line"><span class="comment"># 授权</span></span><br><span class="line">sudo chmod +x /usr/<span class="built_in">local</span>/bin/docker-compose</span><br><span class="line"><span class="comment"># 添加 /usr/local/bin 的全局环境变量</span></span><br><span class="line"><span class="comment"># 验证</span></span><br><span class="line">docker-compose --version</span><br></pre></td></tr></table></figure></li></ol><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>配置文件包含三部分</p><ul><li>version</li><li>services</li><li>network</li></ul><h3 id="nginx-示例配置"><a href="#nginx-示例配置" class="headerlink" title="nginx 示例配置"></a>nginx 示例配置</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">version: <span class="string">&quot;3&quot;</span></span><br><span class="line">services:</span><br><span class="line">  web:</span><br><span class="line">    image: nginx</span><br><span class="line">    container_name: blog_nginx</span><br><span class="line">    restart: always</span><br><span class="line">    ports:</span><br><span class="line">      - 8080:80</span><br><span class="line">    volumes:</span><br><span class="line">      - ./nginx/nginx.conf:/etc/nginx/nginx.conf</span><br><span class="line">      - ./wang_zhe343621:/usr/share/nginx/html</span><br><span class="line">      - ./nginx/logs:/var/<span class="built_in">log</span>/nginx</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><ol><li>启动<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#指定配置文件开启，-d后台启动</span></span><br><span class="line">docker-compose -f [conf.file] up -d</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> docker-compose </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Linux 内核升级</title>
       <link href="/2024/01/27/Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7/"/>
       <url>/2024/01/27/Linux-%E5%86%85%E6%A0%B8%E5%8D%87%E7%BA%A7/</url>
