@@ -1114,13 +1114,6 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/css/</loc>
-    <lastmod>2024-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/Java/8/</loc>
     <lastmod>2024-01-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -1170,13 +1163,6 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/css/%E6%B8%90%E5%8F%98%E8%89%B2/</loc>
-    <lastmod>2024-01-27</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/Java/8/StreamApi/</loc>
     <lastmod>2024-01-27</lastmod>
     <changefreq>weekly</changefreq>
@@ -1198,7 +1184,21 @@
   </url>
   
   <url>
+    <loc>http://wang_zhe343621.gitee.io/categories/css/</loc>
+    <lastmod>2024-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/%E5%8A%A0%E5%AF%86%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-01-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wang_zhe343621.gitee.io/categories/css/%E6%B8%90%E5%8F%98%E8%89%B2/</loc>
     <lastmod>2024-01-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
