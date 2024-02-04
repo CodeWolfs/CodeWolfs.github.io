@@ -6,7 +6,7 @@
   <link href="http://wang_zhe343621.gitee.io/atom.xml" rel="self"/>
   
   <link href="http://wang_zhe343621.gitee.io/"/>
-  <updated>2024-01-31T04:05:26.811Z</updated>
+  <updated>2024-02-04T16:11:14.201Z</updated>
   <id>http://wang_zhe343621.gitee.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>java中excel操作</title>
+    <link href="http://wang_zhe343621.gitee.io/2024/02/05/java%E4%B8%ADexcel%E6%93%8D%E4%BD%9C/"/>
+    <id>http://wang_zhe343621.gitee.io/2024/02/05/java%E4%B8%ADexcel%E6%93%8D%E4%BD%9C/</id>
+    <published>2024-02-04T16:07:33.000Z</published>
+    <updated>2024-02-04T16:11:14.201Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="EasyExcel"><a href="#EasyExcel" class="headerlink" title="EasyExcel"></a>EasyExcel</h1><blockquote><p>参考文档</p></blockquote><ul><li><a href="https://easyexcel.opensource.alibaba.com/docs/current/">官方文档</a></li><li><a href="https://zhuanlan.zhihu.com/p/457848706">知乎使用文档</a></li></ul>]]></content>
+    
+    
+    <summary type="html">java中excel 操作</summary>
+    
+    
+    
+    <category term="java" scheme="http://wang_zhe343621.gitee.io/categories/java/"/>
+    
+    <category term="excel" scheme="http://wang_zhe343621.gitee.io/categories/java/excel/"/>
+    
+    
+    <category term="java" scheme="http://wang_zhe343621.gitee.io/tags/java/"/>
+    
+    <category term="excel" scheme="http://wang_zhe343621.gitee.io/tags/excel/"/>
+    
+  </entry>
   
   <entry>
     <title>ElementPlus踩坑记录</title>
@@ -155,11 +180,11 @@
     <category term="install" scheme="http://wang_zhe343621.gitee.io/categories/install/centos/install/"/>
     
     
+    <category term="docker" scheme="http://wang_zhe343621.gitee.io/tags/docker/"/>
+    
     <category term="centos7" scheme="http://wang_zhe343621.gitee.io/tags/centos7/"/>
     
     <category term="runlike" scheme="http://wang_zhe343621.gitee.io/tags/runlike/"/>
-    
-    <category term="docker" scheme="http://wang_zhe343621.gitee.io/tags/docker/"/>
     
   </entry>
   
@@ -468,32 +493,11 @@
     <category term="java" scheme="http://wang_zhe343621.gitee.io/categories/%E9%87%87%E5%9D%91/java/"/>
     
     
-    <category term="错误" scheme="http://wang_zhe343621.gitee.io/tags/%E9%94%99%E8%AF%AF/"/>
-    
     <category term="java" scheme="http://wang_zhe343621.gitee.io/tags/java/"/>
     
+    <category term="错误" scheme="http://wang_zhe343621.gitee.io/tags/%E9%94%99%E8%AF%AF/"/>
+    
     <category term="error" scheme="http://wang_zhe343621.gitee.io/tags/error/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>mybatis-plus使用记录</title>
-    <link href="http://wang_zhe343621.gitee.io/2022/04/15/mybatis-plus%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/"/>
-    <id>http://wang_zhe343621.gitee.io/2022/04/15/mybatis-plus%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95/</id>
-    <published>2022-04-15T02:23:12.000Z</published>
-    <updated>2023-04-02T18:51:30.029Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="springboot-整合mybatis-plus"><a href="#springboot-整合mybatis-plus" class="headerlink" title="springboot 整合mybatis-plus"></a>springboot 整合mybatis-plus</h1><ol><li><p>引入依赖</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--数据库--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.baomidou<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mybatis-plus-boot-starter<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>3.5.1<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>mysql<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>mysql-connector-java<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure></li><li><p><strong>application.yaml配置</strong></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">mybatis-plus:</span></span><br><span class="line">  <span class="attr">configuration:</span></span><br><span class="line">    <span class="attr">map-underscore-to-camel-case:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">auto-mapping-behavior:</span> <span class="string">full</span></span><br><span class="line">    <span class="attr">log-impl:</span> <span class="string">org.apache.ibatis.logging.stdout.StdOutImpl</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath*:mapper/**/*Mapper.xml</span></span><br><span class="line">  <span class="attr">global-config:</span></span><br><span class="line">    <span class="comment"># 逻辑删除配置</span></span><br><span class="line">    <span class="attr">db-config:</span></span><br><span class="line">      <span class="comment"># 删除前</span></span><br><span class="line">      <span class="attr">logic-not-delete-value:</span> <span class="number">1</span></span><br><span class="line">      <span class="comment"># 删除后</span></span><br><span class="line">      <span class="attr">logic-delete-value:</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></li></ol>]]></content>
-    
-    
-    <summary type="html">mybatis-plus使用记录</summary>
-    
-    
-    
-    <category term="mybatis-plus" scheme="http://wang_zhe343621.gitee.io/categories/mybatis-plus/"/>
-    
-    
-    <category term="mybatis-plus" scheme="http://wang_zhe343621.gitee.io/tags/mybatis-plus/"/>
     
   </entry>
   
