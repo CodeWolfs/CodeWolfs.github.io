@@ -1,0 +1,210 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"><title>Eslint+Prettier+Stylelint使用 | Code Wolf</title><meta name="author" content="Code Wolf"><meta name="copyright" content="Code Wolf"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Eslint+Prettier+Stylelint使用"><link rel="shortcut icon" href="/resources/sys/avatar.jpg"><link rel="canonical" href="http://wang_zhe343621.gitee.io/2024/02/09/Eslint-Prettier-Stylelint%E4%BD%BF%E7%94%A8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  }
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Eslint+Prettier+Stylelint使用',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-02-23 12:13:53'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Code Wolf" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/resources/sys/avatar2.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">66</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">56</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 说一说</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Code Wolf"><span class="site-name">Code Wolf</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 说一说</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav></header><main class="layout" id="content-inner"><div id="post"><div id="post-info"><h1 class="post-title">Eslint+Prettier+Stylelint使用</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-02-09T13:51:41.000Z" title="发表于 2024-02-09 21:51:41">2024-02-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-02-23T04:13:53.344Z" title="更新于 2024-02-23 12:13:53">2024-02-23</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/code-lint/">code_lint</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">936</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>4分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Eslint+Prettier+Stylelint使用"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><article class="post-content" id="article-container"><h1 id="eslint"><a href="#eslint" class="headerlink" title="eslint"></a>eslint</h1><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i -D eslint</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><h3 id="eslintrc-cjs"><a href="#eslintrc-cjs" class="headerlink" title=".eslintrc.cjs"></a>.eslintrc.cjs</h3><p><a href=".eslintrc.cjs">.eslintrc.cjs 文件下载</a></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* eslint-env node */</span></span><br><span class="line"><span class="built_in">require</span>(<span class="string">&quot;@rushstack/eslint-patch/modern-module-resolution&quot;</span>);</span><br><span class="line"></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="attr">root</span>: <span class="literal">true</span>,</span><br><span class="line">  <span class="attr">env</span>: &#123;</span><br><span class="line">    <span class="attr">node</span>: <span class="literal">true</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">extends</span>: [</span><br><span class="line">    <span class="string">&quot;plugin:vue/vue3-essential&quot;</span>,</span><br><span class="line">    <span class="string">&quot;eslint:recommended&quot;</span>,</span><br><span class="line">    <span class="string">&quot;@vue/eslint-config-typescript&quot;</span>,</span><br><span class="line">    <span class="string">&quot;@vue/eslint-config-prettier/skip-formatting&quot;</span>,</span><br><span class="line">  ],</span><br><span class="line">  <span class="attr">parserOptions</span>: &#123;</span><br><span class="line">    <span class="attr">ecmaVersion</span>: <span class="string">&quot;latest&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="attr">rules</span>: &#123;</span><br><span class="line">    <span class="string">&quot;vue/multi-word-component-names&quot;</span>: <span class="string">&quot;off&quot;</span>,</span><br><span class="line">    <span class="string">&quot;vue/comment-directive&quot;</span>: <span class="string">&quot;off&quot;</span>,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="eslintignore"><a href="#eslintignore" class="headerlink" title=".eslintignore"></a>.eslintignore</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">dist</span><br><span class="line">node_modules</span><br><span class="line">public</span><br><span class="line">.husky</span><br><span class="line">.vscode</span><br><span class="line">.idea</span><br><span class="line">*.sh</span><br><span class="line">*.md</span><br><span class="line"></span><br><span class="line">src/assets</span><br><span class="line"></span><br><span class="line">.eslintrc.cjs</span><br><span class="line">.prettierrc.cjs</span><br><span class="line">.stylelintrc.cjs</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="npm-脚本命令"><a href="#npm-脚本命令" class="headerlink" title="npm 脚本命令"></a>npm 脚本命令</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;lint:eslint&quot;</span>: <span class="string">&quot;eslint \&quot;src/**/*.&#123;vue,ts,js&#125;\&quot; \&quot;index.html\&quot; --fix&quot;</span>,</span><br></pre></td></tr></table></figure>
+
+<h1 id="prettier"><a href="#prettier" class="headerlink" title="prettier"></a>prettier</h1><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><h3 id="prettierrc-cjs"><a href="#prettierrc-cjs" class="headerlink" title=".prettierrc.cjs"></a>.prettierrc.cjs</h3><p><a href=".prettierrc.cjs">.prettierrc.cjs 文件下载</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  // (x)=&gt;&#123;&#125;,单个参数箭头函数是否显示小括号。(always:始终显示;avoid:省略括号。默认:always)</span><br><span class="line">  arrowParens: &quot;always&quot;,</span><br><span class="line">  // 开始标签的右尖括号是否跟随在最后一行属性末尾，默认false</span><br><span class="line">  bracketSameLine: false,</span><br><span class="line">  // 对象字面量的括号之间打印空格 (true - Example: &#123; foo: bar &#125; ; false - Example: &#123;foo:bar&#125;)</span><br><span class="line">  bracketSpacing: true,</span><br><span class="line">  // 是否格式化一些文件中被嵌入的代码片段的风格(auto|off;默认auto)</span><br><span class="line">  embeddedLanguageFormatting: &quot;auto&quot;,</span><br><span class="line">  // 指定 HTML 文件的空格敏感度 (css|strict|ignore;默认css)</span><br><span class="line">  htmlWhitespaceSensitivity: &quot;css&quot;,</span><br><span class="line">  // 当文件已经被 Prettier 格式化之后，是否会在文件顶部插入一个特殊的 @format 标记，默认false</span><br><span class="line">  insertPragma: false,</span><br><span class="line">  // 在 JSX 中使用单引号替代双引号，默认false</span><br><span class="line">  jsxSingleQuote: false,</span><br><span class="line">  // 每行最多字符数量，超出换行(默认80)</span><br><span class="line">  printWidth: 120,</span><br><span class="line">  // 超出打印宽度 (always | never | preserve )</span><br><span class="line">  proseWrap: &quot;preserve&quot;,</span><br><span class="line">  // 对象属性是否使用引号(as-needed | consistent | preserve;默认as-needed:对象的属性需要加引号才添加;)</span><br><span class="line">  quoteProps: &quot;as-needed&quot;,</span><br><span class="line">  // 是否只格式化在文件顶部包含特定注释(@prettier| @format)的文件，默认false</span><br><span class="line">  requirePragma: false,</span><br><span class="line">  // 结尾添加分号</span><br><span class="line">  semi: true,</span><br><span class="line">  // 使用单引号 (true:单引号;false:双引号)</span><br><span class="line">  singleQuote: false,</span><br><span class="line">  // 缩进空格数，默认2个空格</span><br><span class="line">  tabWidth: 2,</span><br><span class="line">  // 元素末尾是否加逗号，默认es5: ES5中的 objects, arrays 等会添加逗号，TypeScript 中的 type 后不加逗号</span><br><span class="line">  trailingComma: &quot;es5&quot;,</span><br><span class="line">  // 指定缩进方式，空格或tab，默认false，即使用空格</span><br><span class="line">  useTabs: false,</span><br><span class="line">  // vue 文件中是否缩进 &lt;style&gt; 和 &lt;script&gt; 标签，默认 false</span><br><span class="line">  vueIndentScriptAndStyle: false,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="prettierignore"><a href="#prettierignore" class="headerlink" title=".prettierignore"></a>.prettierignore</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dist</span><br><span class="line">node_modules</span><br><span class="line">public</span><br><span class="line">.husky</span><br><span class="line">.vscode</span><br><span class="line">.idea</span><br><span class="line">*.sh</span><br><span class="line">*.md</span><br><span class="line"></span><br><span class="line">src/assets</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="npm-格式化命令"><a href="#npm-格式化命令" class="headerlink" title="npm 格式化命令"></a>npm 格式化命令</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;lint:prettier&quot;</span>: <span class="string">&quot;prettier --write \&quot;**/*.&#123;js,ts,json,css,less,scss,vue,html,md&#125;\&quot;&quot;</span>,</span><br></pre></td></tr></table></figure>
+
+<h1 id="stylelint"><a href="#stylelint" class="headerlink" title="stylelint"></a>stylelint</h1><h2 id="安装-2"><a href="#安装-2" class="headerlink" title="安装"></a>安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pnpm install -D stylelint stylelint-config-standard stylelint-config-recommended-scss stylelint-config-recommended-vue postcss postcss-html postcss-scss stylelint-config-recess-order stylelint-config-html</span><br></pre></td></tr></table></figure>
+
+<h2 id="配置文件-1"><a href="#配置文件-1" class="headerlink" title="配置文件"></a>配置文件</h2><h3 id="stylelintrc-cjs"><a href="#stylelintrc-cjs" class="headerlink" title=".stylelintrc.cjs"></a>.stylelintrc.cjs</h3><p><a href=".stylelintrc.cjs">.stylelintrc.cjs 文件下载</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  // 继承推荐规范配置</span><br><span class="line">  extends: [</span><br><span class="line">    &quot;stylelint-config-standard&quot;,</span><br><span class="line">    &quot;stylelint-config-recommended-scss&quot;,</span><br><span class="line">    &quot;stylelint-config-recommended-vue/scss&quot;,</span><br><span class="line">    &quot;stylelint-config-html/vue&quot;,</span><br><span class="line">    &quot;stylelint-config-recess-order&quot;,</span><br><span class="line">  ],</span><br><span class="line">  // 指定不同文件对应的解析器</span><br><span class="line">  overrides: [</span><br><span class="line">    &#123;</span><br><span class="line">      files: [&quot;**/*.&#123;vue,html&#125;&quot;],</span><br><span class="line">      customSyntax: &quot;postcss-html&quot;,</span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">      files: [&quot;**/*.&#123;css,scss&#125;&quot;],</span><br><span class="line">      customSyntax: &quot;postcss-scss&quot;,</span><br><span class="line">    &#125;,</span><br><span class="line">  ],</span><br><span class="line">  // 自定义规则</span><br><span class="line">  rules: &#123;</span><br><span class="line">    // 允许 global 、export 、v-deep等伪类</span><br><span class="line">    &quot;selector-pseudo-class-no-unknown&quot;: [</span><br><span class="line">      true,</span><br><span class="line">      &#123;</span><br><span class="line">        ignorePseudoClasses: [&quot;global&quot;, &quot;export&quot;, &quot;v-deep&quot;, &quot;deep&quot;],</span><br><span class="line">      &#125;,</span><br><span class="line">    ],</span><br><span class="line">    &quot;no-empty-source&quot;: null,</span><br><span class="line">  &#125;,</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="stylelintignore"><a href="#stylelintignore" class="headerlink" title=".stylelintignore"></a>.stylelintignore</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">dist</span><br><span class="line">node_modules</span><br><span class="line">public</span><br><span class="line">.husky</span><br><span class="line">.vscode</span><br><span class="line">.idea</span><br><span class="line">*.sh</span><br><span class="line">*.md</span><br><span class="line"></span><br><span class="line">src/assets</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="npm-格式化命令-1"><a href="#npm-格式化命令-1" class="headerlink" title="npm 格式化命令"></a>npm 格式化命令</h2><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;lint:stylelint&quot;</span>: <span class="string">&quot;stylelint  \&quot;**/*.&#123;css,scss,vue,html&#125;\&quot; --fix&quot;</span>,</span><br></pre></td></tr></table></figure>
+
+<h1 id="EditorConfig-编辑器"><a href="#EditorConfig-编辑器" class="headerlink" title="EditorConfig 编辑器"></a>EditorConfig 编辑器</h1><p>EditorConfig 主要用于统一不同 IDE 编辑器的编码风格。</p>
+<h2 id="配置文件-2"><a href="#配置文件-2" class="headerlink" title="配置文件"></a>配置文件</h2><p><a href=".editorconfig">.editorconfig 文件下载</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"># http://editorconfig.org</span><br><span class="line">root = true</span><br><span class="line"></span><br><span class="line"># 表示所有文件适用</span><br><span class="line">[*]</span><br><span class="line">charset = utf-8 # 设置文件字符集为 utf-8</span><br><span class="line">end_of_line = lf # 控制换行类型(lf | cr | crlf)</span><br><span class="line">indent_style = tab # 缩进风格（tab | space）</span><br><span class="line">insert_final_newline = true # 始终在文件末尾插入一个新行</span><br><span class="line"></span><br><span class="line"># 表示仅 md 文件适用以下规则</span><br><span class="line">[*.md]</span><br><span class="line">max_line_length = off # 关闭最大行长度限制</span><br><span class="line">trim_trailing_whitespace = false # 关闭末尾空格修剪</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h1><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u013737132/article/details/130190788">【vue3-element-admin】ESLint+Prettier+Stylelint+EditorConfig 约束和统一前端代码规范</a></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="http://wang_zhe343621.gitee.io">Code Wolf</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://wang_zhe343621.gitee.io/2024/02/09/Eslint-Prettier-Stylelint%E4%BD%BF%E7%94%A8/">http://wang_zhe343621.gitee.io/2024/02/09/Eslint-Prettier-Stylelint%E4%BD%BF%E7%94%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://wang_zhe343621.gitee.io" target="_blank">Code Wolf</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/eslint/">eslint</a><a class="post-meta__tags" href="/tags/prettier/">prettier</a><a class="post-meta__tags" href="/tags/stylelint/">stylelint</a></div><div class="post_share"><div class="social-share" data-image="/resources/sys/avatar2.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/resources/sys/wechat.png" target="_blank"><img class="post-qr-code-img" src="/resources/sys/wechat.png" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/resources/sys/alipay.png" target="_blank"><img class="post-qr-code-img" src="/resources/sys/alipay.png" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2024/02/05/java%E4%B8%ADexcel%E6%93%8D%E4%BD%9C/" title="java中excel操作"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">java中excel操作</div></div></a></div><div class="next-post pull-right"><a href="/2024/02/09/git%E4%BD%BF%E7%94%A8husky-hook/" title="git使用husky hook"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">git使用husky hook</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="lv-container" data-id="city" data-uid="MTAyMC81NTM5MS8zMTg1OA"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/resources/sys/avatar2.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Code Wolf</div><div class="author-info__description">热爱生活，热爱编程</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">48</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">66</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">56</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/CodeWolfs"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="mailto:2546972682@qq.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="qqto:2546972682" target="_blank" title="QQ"><i class="fab fa-qq"></i></a><a class="social-icon" href="weixinto:15296797459" target="_blank" title="WeChat"><i class="fab fa-weixin"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is code-wolf's Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#eslint"><span class="toc-number">1.</span> <span class="toc-text">eslint</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="toc-number">1.2.</span> <span class="toc-text">配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#eslintrc-cjs"><span class="toc-number">1.2.1.</span> <span class="toc-text">.eslintrc.cjs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#eslintignore"><span class="toc-number">1.2.2.</span> <span class="toc-text">.eslintignore</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#npm-%E8%84%9A%E6%9C%AC%E5%91%BD%E4%BB%A4"><span class="toc-number">1.2.3.</span> <span class="toc-text">npm 脚本命令</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#prettier"><span class="toc-number">2.</span> <span class="toc-text">prettier</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-1"><span class="toc-number">2.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">2.2.</span> <span class="toc-text">配置</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#prettierrc-cjs"><span class="toc-number">2.2.1.</span> <span class="toc-text">.prettierrc.cjs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#prettierignore"><span class="toc-number">2.2.2.</span> <span class="toc-text">.prettierignore</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%91%BD%E4%BB%A4"><span class="toc-number">2.3.</span> <span class="toc-text">npm 格式化命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#stylelint"><span class="toc-number">3.</span> <span class="toc-text">stylelint</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85-2"><span class="toc-number">3.1.</span> <span class="toc-text">安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-1"><span class="toc-number">3.2.</span> <span class="toc-text">配置文件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#stylelintrc-cjs"><span class="toc-number">3.2.1.</span> <span class="toc-text">.stylelintrc.cjs</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#stylelintignore"><span class="toc-number">3.2.2.</span> <span class="toc-text">.stylelintignore</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#npm-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%91%BD%E4%BB%A4-1"><span class="toc-number">3.3.</span> <span class="toc-text">npm 格式化命令</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#EditorConfig-%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">4.</span> <span class="toc-text">EditorConfig 编辑器</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6-2"><span class="toc-number">4.1.</span> <span class="toc-text">配置文件</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-number">5.</span> <span class="toc-text">参考文献</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/23/vue3%E9%87%87%E5%9D%91%E8%AE%B0%E5%BD%95/" title="vue3采坑记录">vue3采坑记录</a><time datetime="2024-02-23T03:09:02.000Z" title="发表于 2024-02-23 11:09:02">2024-02-23</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/09/git%E4%BD%BF%E7%94%A8husky-hook/" title="git使用husky hook">git使用husky hook</a><time datetime="2024-02-09T13:52:09.000Z" title="发表于 2024-02-09 21:52:09">2024-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/09/Eslint-Prettier-Stylelint%E4%BD%BF%E7%94%A8/" title="Eslint+Prettier+Stylelint使用">Eslint+Prettier+Stylelint使用</a><time datetime="2024-02-09T13:51:41.000Z" title="发表于 2024-02-09 21:51:41">2024-02-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/02/05/java%E4%B8%ADexcel%E6%93%8D%E4%BD%9C/" title="java中excel操作">java中excel操作</a><time datetime="2024-02-04T16:07:33.000Z" title="发表于 2024-02-05 00:07:33">2024-02-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/01/29/ElementPlus%E8%B8%A9%E5%9D%91%E8%AE%B0%E5%BD%95/" title="ElementPlus踩坑记录">ElementPlus踩坑记录</a><time datetime="2024-01-29T08:52:48.000Z" title="发表于 2024-01-29 16:52:48">2024-01-29</time></div></div></div></div></div></div></main><footer id="footer" style="background: rgb(128, 128, 128)"><div id="footer-wrap"><div class="copyright">&copy;2022 - 2024 By Code Wolf</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">我来到、我看见、我记录！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"><script>function loadLivere () {
+  if (typeof LivereTower === 'object') {
+    window.LivereTower.init()
+  }
+  else {
+    (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  }
+}
+
+if ('Livere' === 'Livere' || !false) {
+  if (false) btf.loadComment(document.getElementById('lv-container'), loadLivere)
+  else loadLivere()
+}
+else {
+  function loadOtherComment () {
+    loadLivere()
+  }
+}</script></div><canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="true"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></body></html>
