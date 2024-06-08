@@ -8,7 +8,7 @@
       <link href="/2024/02/23/vue3%E9%87%87%E5%9D%91%E8%AE%B0%E5%BD%95/"/>
       <url>/2024/02/23/vue3%E9%87%87%E5%9D%91%E8%AE%B0%E5%BD%95/</url>
       
-        <content type="html"><![CDATA[<h1 id="vue3-使用pinia-持久化失效"><a href="#vue3-使用pinia-持久化失效" class="headerlink" title="vue3 使用pinia 持久化失效"></a>vue3 使用pinia 持久化失效</h1><h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><ul><li>vue3</li><li>pinia<ul><li>pinia-plugin-persistedstate</li></ul></li><li>router</li></ul><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>设置动态路由<br>在页面刷新的时候会初始化router,所有在router的配置文件中进行了初始化，在这之中使用了store,导致了store 持久化失效</p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在<code>app.use(router)</code> 之前进行了设置动态路由，在这之中使用了store,导致失效</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>在router 初始化之后再使用store.</p><blockquote><p>提示：这其中并不会报错提示</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<h1 id="vue3-使用pinia-持久化失效"><a href="#vue3-使用pinia-持久化失效" class="headerlink" title="vue3 使用pinia 持久化失效"></a>vue3 使用pinia 持久化失效</h1><h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><ul><li>vue3</li><li>pinia<ul><li>pinia-plugin-persistedstate</li></ul></li><li>router</li></ul><h2 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h2><p>设置动态路由<br>在页面刷新的时候会初始化router,所有在router的配置文件中进行了初始化，在这之中使用了store,导致了store 持久化失效</p><h2 id="原因"><a href="#原因" class="headerlink" title="原因"></a>原因</h2><p>在<code>app.use(router)</code> 之前进行了设置动态路由，在这之中使用了store,导致失效</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>在router 初始化之后再使用store.</p><blockquote><p>提示：这其中并不会报错提示</p></blockquote><h1 id="vue-router-多层菜单-但路由不嵌套"><a href="#vue-router-多层菜单-但路由不嵌套" class="headerlink" title="vue-router 多层菜单-但路由不嵌套"></a>vue-router 多层菜单-但路由不嵌套</h1><h2 id="组件-1"><a href="#组件-1" class="headerlink" title="组件"></a>组件</h2><ul><li>vue3</li><li>router<h2 id="场景-1"><a href="#场景-1" class="headerlink" title="场景"></a>场景</h2>后台管理系统中，有一个侧边导航栏，这个菜单是可以多级嵌套的，菜单项可以路由，菜单不能路由，这个菜单的树形数据是根据<code>router.getRoutes()</code>获取的</li></ul><h2 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h2><p>希望路由不要嵌套，所有都展示位2级路由，但是你嵌套路由的写法导致必须要嵌套多个<code>&lt;router-view&gt;</code></p><h2 id="解决-1"><a href="#解决-1" class="headerlink" title="解决"></a>解决</h2><p>不需要展示的中间路由的component可以为undefined,这样他就只提供了一个路径匹配，没有使用组件，就相当于2级路由<br>但是中间的路径也匹配不到了,找不到就会走根路径，可以写一个redirect</p>]]></content>
       
       
       <categories>
@@ -1062,9 +1062,9 @@
       
         <tags>
             
-            <tag> PLSQL </tag>
-            
             <tag> question </tag>
+            
+            <tag> PLSQL </tag>
             
         </tags>
       
