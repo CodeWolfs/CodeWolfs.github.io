@@ -4,7 +4,7 @@
   <url>
     <loc>http://wang_zhe343621.gitee.io/2024/02/23/vue3%E9%87%87%E5%9D%91%E8%AE%B0%E5%BD%95/</loc>
     
-    <lastmod>2024-02-23</lastmod>
+    <lastmod>2024-06-08</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -606,20 +606,6 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/tags/question/</loc>
-    <lastmod>2024-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://wang_zhe343621.gitee.io/tags/PLSQL/</loc>
-    <lastmod>2024-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wang_zhe343621.gitee.io/tags/DBSM/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -641,7 +627,21 @@
   </url>
   
   <url>
+    <loc>http://wang_zhe343621.gitee.io/tags/PLSQL/</loc>
+    <lastmod>2024-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wang_zhe343621.gitee.io/tags/%E6%B3%A8%E5%86%8C%E7%A0%81/</loc>
+    <lastmod>2024-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wang_zhe343621.gitee.io/tags/question/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -669,14 +669,14 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/tags/SpringCloudAlibaba/</loc>
+    <loc>http://wang_zhe343621.gitee.io/tags/SpringCloud/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/tags/SpringCloud/</loc>
+    <loc>http://wang_zhe343621.gitee.io/tags/SpringCloudAlibaba/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1119,7 +1119,7 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/question/PLSQL/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/DBSM/Oracle/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1140,14 +1140,14 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/DBSM/Oracle/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/question/git/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/question/git/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/question/PLSQL/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1238,13 +1238,6 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/SpringCloud/SpringCloudAlibaba/</loc>
-    <lastmod>2024-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/vue3/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1259,14 +1252,14 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/SpringCloud/SpringCloudAlibaba/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/css/</loc>
+    <loc>http://wang_zhe343621.gitee.io/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1336,13 +1329,6 @@
   </url>
   
   <url>
-    <loc>http://wang_zhe343621.gitee.io/categories/css/%E6%B8%90%E5%8F%98%E8%89%B2/</loc>
-    <lastmod>2024-06-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/Java/8/StreamApi/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -1364,7 +1350,21 @@
   </url>
   
   <url>
+    <loc>http://wang_zhe343621.gitee.io/categories/css/</loc>
+    <lastmod>2024-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://wang_zhe343621.gitee.io/categories/%E5%8A%A0%E5%AF%86%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2024-06-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://wang_zhe343621.gitee.io/categories/css/%E6%B8%90%E5%8F%98%E8%89%B2/</loc>
     <lastmod>2024-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
